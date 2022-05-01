@@ -7,7 +7,7 @@
 
 > The Art of 64-bit Assembly Language (Ao64A) is a modern update to Randall Hyde’s classic “The Art of Assembly Language” (https://nostarch.com/assembly2.htm). This all-new text features the 64-bit Intel/AMD x86-64 architecture and teaches assembly language programming using the Microsoft MASM assembler under Windows. Topics include basic assembly language programming and machine organization, integer arithmetic, floating-point arithmetic, SIMD (SSE/AVX) programming, strings, and bit manipulation. An extremely comprehensive book for those wishing to learn x86-64 assembly language programming.
 > 
-> -- The Art of 64-bit Assembly Language
+> -- Randall Hyde, The Art of 64-bit Assembly Language
 
 NASM macOS translation of the source code listings distributed with the Art of 64-bit Assembly Language book.
 
