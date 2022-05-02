@@ -102,7 +102,7 @@ _asmMain:
         
 ; Negate the value and print as a signed integer (work with a full
 ; integer here, because C++ %d format specifier expects a 32-bit
-; integer. H.O. 32 bits of RDX get ignored by C++.
+; integer. H.O. 32 bits of RSI get ignored by C++.
         
             mov     rsi, [intValue]
             not     rsi

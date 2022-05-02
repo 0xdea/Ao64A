@@ -39,7 +39,7 @@ _asmFunc:
 
 ; Here's where will call the C printf function to print 
 ; "Hello, World!" Pass the address of the format string
-; to printf in the RCX register. Use the LEA instruction 
+; to printf in the RDI register. Use the LEA instruction 
 ; to get the address of fmtStr.
         
         	lea     rdi, [fmtStr]

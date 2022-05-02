@@ -21,8 +21,8 @@ int main(void)
         long unsigned       v10;     
         long long int       v11;     
         long long unsigned  v12;
-        __int64_t             v13;           
-        __uint64_t    v14;  
+        __int64_t           v13;           
+        __uint64_t          v14;  
         float               v15;             
         double              v16;            
         void *              v17;           
@@ -41,8 +41,8 @@ int main(void)
         "Size of long unsigned:      %2zd\n"
         "Size of long long int:      %2zd\n"
         "Size of long long unsigned: %2zd\n"
-        "Size of __int64_t:            %2zd\n"
-        "Size of __uint64_t:   %2zd\n"
+        "Size of __int64_t:          %2zd\n"
+        "Size of __uint64_t:         %2zd\n"
         "Size of float:              %2zd\n"
         "Size of double:             %2zd\n"
         "Size of pointer:            %2zd\n",

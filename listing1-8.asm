@@ -60,8 +60,8 @@ _asmMain:
 ;
 ; int readLine( char *dest, int maxLen )
 ;
-; Pass a pointer to the destination buffer in the RCX register.
-; Pass the maximum buffer size (max chars + 1) in EDX.
+; Pass a pointer to the destination buffer in the RDI register.
+; Pass the maximum buffer size (max chars + 1) in ESI.
 ; This function ignores the readLine return result.
 ; Prompt the user to enter a string:
 

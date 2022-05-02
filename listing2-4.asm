@@ -69,7 +69,7 @@ _getTitle:
 ; int readNum( char *prompt );
 ; 
 ; A pointer to a string containing a prompt message is passed in the
-; RCX register.
+; RDI register.
 ; 
 ; This procedure prints the prompt, reads an input string from the
 ; user, then converts the input string to an integer and returns the
@@ -83,7 +83,7 @@ readNum:
             sub     rsp, 56
         
 ; Print the prompt message. Note that the prompt message was passed to
-; this procedure in RCX, we're just passing it on to printf:
+; this procedure in RDI, we're just passing it on to printf:
 
             call    _printf
 
