@@ -6,7 +6,7 @@
 ;
 ;
 ; % nasm -fmacho64 listing4-3.asm
-; % g++ c.cpp listing4-3.o -o listing4-3
+; % g++ c.cpp listing4-3.o -o listing4-3 -Wl,-no_pie
 ; % ./listing4-3
 
 
