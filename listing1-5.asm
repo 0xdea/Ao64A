@@ -4,7 +4,8 @@
 ; provide the output.
 ;
 ; % nasm -f macho64 listing1-5.asm
-; % g++ listing1-6.cpp listing1-5.o -o listing1-6
+; % g++ listing1-6.cpp listing1-5.o -o listing1-5
+; ./listing1-5
 
 
 	default rel
