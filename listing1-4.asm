@@ -2,6 +2,7 @@
 ; A simple demonstration of a user-defined procedure.
 ; % nasm -f macho64 listing1-4.asm
 ; % g++ listing1-4.o -o listing1-4
+; % ./listing1-4
 
 
 	section	.text                          	; Code segment
