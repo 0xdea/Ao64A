@@ -3,7 +3,7 @@
 ; Calling C Standard Libary string functions
 ;
 ;
-; % nasm -fmacho64 listing4-6.asm
+; % nasm -f macho64 listing4-6.asm
 ; % g++ c.cpp listing4-6.o -o listing4-6
 ; % ./listing4-6
 

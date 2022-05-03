@@ -3,7 +3,7 @@
 ; Sample struct initialization example.
 ;
 ;
-; % nasm -fmacho64 listing4-8.asm
+; % nasm -f macho64 listing4-8.asm
 ; % g++ c.cpp listing4-8.o -o listing4-8
 ; % ./listing4-8
 

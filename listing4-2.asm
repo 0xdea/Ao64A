@@ -3,7 +3,7 @@
 ; // Pointer constant demonstration
 ;
 ;
-; % nasm -fmacho64 listing4-2.asm
+; % nasm -f macho64 listing4-2.asm
 ; % g++ c.cpp listing4-2.o -o listing4-2 -Wl,-no_pie
 ; % ./listing4-2
 

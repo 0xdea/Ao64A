@@ -3,7 +3,7 @@
 ; Displays some numeric values on the console.
 ;
 ;
-; % nasm -fmacho64 listing2-1.asm
+; % nasm -f macho64 listing2-1.asm
 ; % g++ c.cpp listing2-1.o -o listing2-1
 ; % ./listing2-1
 

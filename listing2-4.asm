@@ -3,7 +3,7 @@
 ; Demonstrate packed data types
 ;
 ;
-; % nasm -fmacho64 listing2-4.asm
+; % nasm -f macho64 listing2-4.asm
 ; % g++ c.cpp listing2-4.o -o listing2-4
 ; % ./listing2-4
 

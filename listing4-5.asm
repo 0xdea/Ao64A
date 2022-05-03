@@ -5,7 +5,7 @@
 ; pointer access
 ;
 ;
-; % nasm -fmacho64 listing4-5.asm
+; % nasm -f macho64 listing4-5.asm
 ; % g++ c.cpp listing4-5.o -o listing4-5
 ; % ./listing4-5
 

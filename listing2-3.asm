@@ -4,7 +4,7 @@
 
 ;
 ;
-; % nasm -fmacho64 listing2-3.asm
+; % nasm -f macho64 listing2-3.asm
 ; % g++ c.cpp listing2-3.o -o listing2-3
 ; % ./listing2-3
 

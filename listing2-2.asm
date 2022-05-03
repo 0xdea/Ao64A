@@ -3,7 +3,7 @@
 ; Demonstrate AND, OR, XOR, and NOT logical instructions.
 ;
 ;
-; % nasm -fmacho64 listing2-2.asm
+; % nasm -f macho64 listing2-2.asm
 ; % g++ c.cpp listing2-2.o -o listing2-2
 ; % ./listing2-2
 

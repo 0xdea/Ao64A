@@ -3,7 +3,7 @@
 ; Demonstrate address expressions
 ;
 ;
-; % nasm -fmacho64 listing3-1.asm
+; % nasm -f macho64 listing3-1.asm
 ; % g++ c.cpp listing3-1.o -o listing3-1
 ; % ./listing3-1
 

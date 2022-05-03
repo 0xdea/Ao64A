@@ -5,7 +5,7 @@
 ; run properly
 ;
 ;
-; % nasm -fmacho64 listing4-4.asm
+; % nasm -f macho64 listing4-4.asm
 ; % g++ c.cpp listing4-4.o -o listing4-4
 ; % ./listing4-4
 

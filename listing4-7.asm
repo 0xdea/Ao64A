@@ -3,7 +3,7 @@
 ; A simple bubble sort example
 ;
 ;
-; % nasm -fmacho64 listing4-7.asm
+; % nasm -f macho64 listing4-7.asm
 ; % g++ c.cpp listing4-7.o -o listing4-7
 ; % ./listing4-7
 
