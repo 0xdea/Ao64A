@@ -4,7 +4,8 @@
 ; a function result to a C++ program.
 ;
 ; % nasm -f macho64 listing1-8.asm
-; % g++ c.cpp listing1-8.o -p listing1-8
+; % g++ c.cpp listing1-8.o -o listing1-8
+; % ./listing1-8
 
 
 	default rel
