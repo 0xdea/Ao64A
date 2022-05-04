@@ -44,7 +44,7 @@ _getTitle:
         	global	_asmMain
 _asmMain:
 ; to align stack
-                push    rbx
+            push    rbx
 
 ; "Magic" instruction offered without
 ; explanation at this point:
@@ -57,6 +57,6 @@ _asmMain:
         	call    _printf
         
         	add     rsp, 48
-		pop     rbx
+			pop     rbx
         	ret     ;Returns to caller
         

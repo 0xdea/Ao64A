@@ -35,7 +35,7 @@ _asmFunc:
 ; "Magic" instruction offered without explanation at this 
 ; point:
 
-	sub     rsp, 56
+			sub     rsp, 56
                 
 
 ; Here's where will call the C printf function to print 
@@ -51,5 +51,5 @@ _asmFunc:
        
         	add     rsp, 56
         
-        	ret     ;Returns to caller
+        	ret     ; Returns to caller
         

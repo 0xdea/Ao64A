@@ -140,8 +140,8 @@ _asmMain:
 
         	xor     rbx, rbx
 dispLp: 	;mov     edx, [sortMe+rbx*4]
-		lea	rdx, [sortMe]
-		mov	edx, [rdx+rbx*4]
+			lea	rdx, [sortMe]
+			mov	edx, [rdx+rbx*4]
 		
         	mov     rsi, rbx
         	lea     rdi, [fmtStr]

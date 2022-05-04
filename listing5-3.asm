@@ -36,14 +36,14 @@ _getTitle:
 ; to the console display.
 
 print40Spaces:
-    	sub  	rsp, 56   ;"Magic" instruction
-     	mov  	ebx, 40
+			sub  	rsp, 56   ;"Magic" instruction
+			mov  	ebx, 40
 printLoop:	lea  	rdi, [space]
- 	call 	_printf
-	dec  	ebx
-	jnz  	printLoop ;Until ebx==0
-	add  	rsp, 56   ;"Magic" instruction
-        ret
+			call 	_printf
+			dec  	ebx
+			jnz  	printLoop ;Until ebx==0
+			add  	rsp, 56   ;"Magic" instruction
+        	ret
 
 
 ; Here is the "asmMain" function.
@@ -55,17 +55,17 @@ _asmMain:
 ; "Magic" instruction offered without
 ; explanation at this point:
 
-        sub     rsp, 48
+        	sub     rsp, 48
 
-        mov     rbx, 20
-astLp:  call    print40Spaces
-        lea     rdi, [asterisk]
-	mov     rsi, rbx
-	call    _printf
-        dec     rbx
-	jnz     astLp
+        	mov     rbx, 20
+astLp:  	call    print40Spaces
+        	lea     rdi, [asterisk]
+			mov     rsi, rbx
+			call    _printf
+        	dec     rbx
+			jnz     astLp
 
-        add     rsp, 48
-	pop     rbx
-        ret     ;Returns to caller
+        	add     rsp, 48
+			pop     rbx
+        	ret     ;Returns to caller
 

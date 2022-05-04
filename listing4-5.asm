@@ -64,26 +64,26 @@ _asmMain:
 ; Read a line of text from the user and place in
 ; the newly allocated buffer:
 
-		lea	rdi, [prompt]		; Prompt user to input
-		call	_printf			;  a line of text.
+			lea	rdi, [prompt]		   	; Prompt user to input
+			call	_printf				; a line of text.
 
-        	mov     rdi, [bufPtr]   	  ; Pointer to input buffer
+        	mov     rdi, [bufPtr]   	; Pointer to input buffer
         	mov     rsi, maxLen     	; Maximum input buffer length
         	call    _readLine        	; Read text from user
         	cmp     rax, -1         	; Skip output if error
         	je      allDone
-        	mov     [bytesRead], rax  	;Save number of chars read
+        	mov     [bytesRead], rax  	; Save number of chars read
         
 ; Display the data input by the user:
 
-        	xor     rbx, rbx        	;Set index to zero
-dispLp: 	mov     rcx, [bufPtr]    	;Pointer to buffer
-        	mov     rsi, rbx        	;Display index into buffer
-        	mov     rdx, [rcx+rbx*1] 	;Read dword rather than byte!
+        	xor     rbx, rbx        	; Set index to zero
+dispLp: 	mov     rcx, [bufPtr]    	; Pointer to buffer
+        	mov     rsi, rbx        	; Display index into buffer
+        	mov     rdx, [rcx+rbx*1] 	; Read dword rather than byte!
         	lea     rdi, [fmtStr]
         	call    _printf
         
-        	inc     rbx             	;Repeat for each char in buffer
+        	inc     rbx             	; Repeat for each char in buffer
         	cmp     rbx, [bytesRead]
         	jb      dispLp
 

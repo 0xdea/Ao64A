@@ -23,7 +23,7 @@ fpMsg       db    	"followingProc was called", nl, 0
 
             global _getTitle
 _getTitle:
-            lea 	rax, [ttlStr]
+            lea 	  rax, [ttlStr]
             ret
 
 
@@ -39,10 +39,10 @@ noRet:
 
 
 followingProc:
-          	sub  rsp, 28h
-            lea  rdi, fpMsg
-            call _printf
-            add  rsp, 28h
+          	sub     rsp, 28h
+            lea     rdi, fpMsg
+            call    _printf
+            add     rsp, 28h
             ret
 
 

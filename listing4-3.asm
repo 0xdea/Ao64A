@@ -55,23 +55,23 @@ _asmMain:
         	call    _malloc
         	mov     [ptrVar], rax   	; Save pointer to buffer
 
-             	mov     rdi, 1024             	; Allocate 1024 bytes
+            mov     rdi, 1024             	; Allocate 1024 bytes
         	call    _malloc
         	mov     [ptrVar2], rax   	; Save pointer to buffer
 
-                lea     rdi, fmtStr
-                mov     rsi, ptrVar
-                mov     rdx, rax                ; Print addresses
-                call    _printf
+            lea     rdi, fmtStr
+            mov     rsi, ptrVar
+            mov     rdx, rax                ; Print addresses
+            call    _printf
 
 ; Free the storage by calling
 ; C standard library free function.
 ;
 ; free( bufPtr );
 
-                mov     rdi, [ptrVar]
-                call    _free
-                mov     rdi, [ptrVar2]
-                call    _free
-                add     rsp, 56
-                ret     ; Returns to caller
+            mov     rdi, [ptrVar]
+            call    _free
+            mov     rdi, [ptrVar2]
+            call    _free
+            add     rsp, 56
+            ret     ; Returns to caller
