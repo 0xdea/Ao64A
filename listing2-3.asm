@@ -74,7 +74,7 @@ _asmMain:
 
         lea rdi, [input]
         call _atoi
-; and     rax, 0ffh ; Only keep L.O. eight bits
+        ; and   rax, 0ffh ; Only keep L.O. eight bits
         mov [intValue], rax
 
 ; Print the [input] value (in decimal) as a hexadecimal number:
