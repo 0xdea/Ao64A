@@ -4,15 +4,13 @@
 ; % g++ listing1-4.o -o listing1-4
 ; % ./listing1-4
 
-
-	section	.text                          	; Code segment
+        section	.text                  ; Code segment
 
 ; A sample user-defined procedure that this program can call.
 
         global myProc
 myProc:
-        ret    ; Immediately return to the caller
-
+        ret                            ; Immediately return to the caller
 
 ; Here is the "main" procedure.
 
@@ -21,7 +19,7 @@ _main:
 
 ; Call the user-define procedure
 
-        call   myProc
+        call myProc
 
-        ret     ;Returns to caller
+        ret                            ; Returns to caller
 
