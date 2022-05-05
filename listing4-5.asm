@@ -64,8 +64,8 @@ _asmMain:
 ; Read a line of text from the user and place in
 ; the newly allocated buffer:
 
-        lea	rdi, [prompt]              ; Prompt user to input
-        call	_printf                   ; a line of text.
+        lea rdi, [prompt]              ; Prompt user to input
+        call _printf                   ; a line of text.
 
         mov rdi, [bufPtr]              ; Pointer to input buffer
         mov rsi, maxLen                ; Maximum input buffer length
@@ -77,7 +77,8 @@ _asmMain:
 ; Display the data input by the user:
 
         xor rbx, rbx                   ; Set index to zero
-        dispLp: 	mov rcx, [bufPtr]     ; Pointer to buffer
+dispLp: 	
+        mov rcx, [bufPtr]              ; Pointer to buffer
         mov rsi, rbx                   ; Display index into buffer
         mov rdx, [rcx+rbx*1]           ; Read dword rather than byte!
         lea rdi, [fmtStr]
@@ -99,4 +100,3 @@ allDone:
         add rsp, 48
         pop rbx                        ; Restore RBX
         ret                            ; Returns to caller
-

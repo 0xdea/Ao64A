@@ -247,7 +247,8 @@ whileLT10:
         inc r15d
         jmp whileLT10
 
-        endwhile1: lea rdi, [fmtStr3]
+endwhile1: 
+        lea rdi, [fmtStr3]
         call _printf
         leave
         pop r15
@@ -282,4 +283,3 @@ _asmMain:
 
         leave
         ret                            ; Returns to caller
-

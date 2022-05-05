@@ -34,37 +34,36 @@ i:
 
         global	_getTitle
 _getTitle:
-        lea 	rax, [ttlStr]
+        lea rax, [ttlStr]
         ret
 
 ; Here is the "asmMain" function.
 
         global	_asmMain
 _asmMain:
-        push	rbx
+        push rbx
 
 ; "Magic" instruction offered without
 ; explanation at this point:
 
         sub rsp, 48
 
-        lea	rdi, [fmtStr1]
-        movzx	rsi, byte [i]
-        call	_printf
+        lea rdi, [fmtStr1]
+        movzx rsi, byte [i]
+        call _printf
 
-        lea	rdi, fmtStr2
-        movzx	rsi, byte [i+1]
-        call	_printf
+        lea rdi, fmtStr2
+        movzx rsi, byte [i+1]
+        call _printf
 
-        lea	rdi, fmtStr3
-        movzx	rsi, byte [i+2]
-        call	_printf
+        lea rdi, fmtStr3
+        movzx rsi, byte [i+2]
+        call _printf
 
-        lea	rdi, fmtStr4
-        movzx	rsi, byte [i+3]
-        call	_printf
+        lea rdi, fmtStr4
+        movzx rsi, byte [i+3]
+        call _printf
 
         add rsp, 48
-        pop	rbx
+        pop rbx
         ret                            ; Returns to caller
-

@@ -30,7 +30,7 @@ ptrVar:
 
         global	_getTitle
 _getTitle:
-        lea 	rax, [ttlStr]
+        lea rax, [ttlStr]
         ret
 
 ; Here is the "asmMain" function.
@@ -50,4 +50,3 @@ _asmMain:
 
         add rsp, 56
         ret                            ; Returns to caller
-

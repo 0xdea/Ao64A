@@ -15,4 +15,3 @@ _asmFunc:
 ; Empty function just returns to C++ code
 
         ret                            ; Returns to caller
-

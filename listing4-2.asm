@@ -32,7 +32,7 @@ b:
 
         global	_getTitle
 _getTitle:
-        lea 	rax, [ttlStr]
+        lea rax, [ttlStr]
         ret
 
 ; Here is the "asmMain" function.
@@ -55,4 +55,3 @@ _asmMain:
         add rsp, 48
         pop rbx
         ret                            ; Returns to caller
-

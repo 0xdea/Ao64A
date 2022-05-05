@@ -87,18 +87,19 @@ _asmMain:
 ; Display the array:
 
         mov dword [index], 0
-        dispLp: cmp dword [index], NumElements
+dispLp: 
+        cmp dword [index], NumElements
         jnl dispDone
 
         lea rdi, [fmtStr1]
-        mov esi, [index]               ; zero extends!
-        lea rdx, [Pts]                 ; Get array base
-        movzx rdx, byte[rdx+rsi*2+Pt.x] ; Get x field
+        mov esi, [index]                 ; zero extends!
+        lea rdx, [Pts]                   ; Get array base
+        movzx rdx, byte[rdx+rsi*2+Pt.x]  ; Get x field
         call _printf
 
         lea rdi, [fmtStr2]
-        mov esi, [index]               ; zero extends!
-        lea rdx, Pts                   ; Get array base
+        mov esi, [index]                 ; zero extends!
+        lea rdx, Pts                     ; Get array base
         movzx rdx, byte [rdx+rsi*2+Pt.y] ; Get y field
         call _printf
 
@@ -110,4 +111,3 @@ _asmMain:
 dispDone:
         leave
         ret                            ; Returns to caller
-

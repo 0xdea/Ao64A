@@ -67,7 +67,7 @@ input:
 
         global	_getTitle
 _getTitle:
-        lea 	rax, [ttlStr]
+        lea rax, [ttlStr]
         ret
 
 ; Here's a user-written function that reads a numeric value from the
@@ -228,4 +228,3 @@ badYear:
 allDone:
         add rsp, 56
         ret                            ; Returns to caller
-

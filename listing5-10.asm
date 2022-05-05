@@ -25,7 +25,8 @@ strfill:
 
 ; While we haven't reached the end of the string
 
-        whlNot0: cmp byte [rdi], 0
+whlNot0: 
+        cmp byte [rdi], 0
         je endOfStr
 
 ; Overwrite character in string with the character

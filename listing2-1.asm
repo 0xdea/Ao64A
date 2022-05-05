@@ -81,4 +81,3 @@ _asmMain:
         add rsp, 56
 
         ret                            ; Returns to caller
-

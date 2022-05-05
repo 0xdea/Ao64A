@@ -25,7 +25,7 @@ dwArray:
 
         global	_getTitle
 _getTitle:
-        lea 	rax, [ttlStr]
+        lea rax, [ttlStr]
         ret
 
 ; Here is the user-written procedure
@@ -34,7 +34,8 @@ _getTitle:
 zeroBytes:
         mov eax, 0
         mov edx, 256
-        repeatlp: 	mov [rcx+rdx*4-4], eax
+repeatlp: 	
+        mov [rcx+rdx*4-4], eax
         dec rdx
         jnz repeatlp
         ret

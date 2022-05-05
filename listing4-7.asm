@@ -26,7 +26,7 @@ fmtStr:
 
 sortMe:
         dd 	1, 2, 16, 14
-        dd 	3, 9, 4, 10
+        dd 	3, 9,  4, 10
         dd 	5, 7, 15, 12
         dd 	8, 6, 11, 13
 
@@ -73,7 +73,8 @@ sort:
 
 ; Outer loop
 
-        outer: 	mov byte [didSwap], false
+outer: 	
+        mov byte [didSwap], false
 
         xor rbx, rbx                   ; RBX = 0
 inner:
@@ -98,7 +99,8 @@ dontSwap:
 ; exited from inner loop, test for repeat
 ; of outer loop:
 
-        xInner: 	cmp byte [didSwap], true
+xInner: 	
+        cmp byte [didSwap], true
         je outer
 
         pop rdx
@@ -129,8 +131,8 @@ _asmMain:
 
         xor rbx, rbx
 dispLp:                                ; mov     edx, [sortMe+rbx*4]
-        lea	rdx, [sortMe]
-        mov	edx, [rdx+rbx*4]
+        lea rdx, [sortMe]
+        mov edx, [rdx+rbx*4]
 
         mov rsi, rbx
         lea rdi, [fmtStr]
@@ -143,4 +145,3 @@ dispLp:                                ; mov     edx, [sortMe+rbx*4]
         add rsp, 48
         pop rbx
         ret                            ; Returns to caller
-

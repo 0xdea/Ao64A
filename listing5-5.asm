@@ -30,7 +30,7 @@ rtn2:
 
         global	_getTitle
 _getTitle:
-        lea 	rax, [ttlStr]
+        lea rax, [ttlStr]
         ret
 
 ; proc1 - Gets called by proc2, but returns

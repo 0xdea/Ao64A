@@ -24,7 +24,7 @@ fpMsg:
 
         global _getTitle
 _getTitle:
-        lea 	 rax, [ttlStr]
+        lea rax, [ttlStr]
         ret
 
 ; noRet-

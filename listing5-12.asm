@@ -67,4 +67,3 @@ _asmMain:
 
         leave
         ret                            ; Returns to caller
-

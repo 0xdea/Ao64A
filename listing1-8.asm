@@ -39,18 +39,18 @@ input:
 ; expects a function named "getTitle" that returns a pointer
 ; to a string as the function result. This is that function:
 
-        global	_getTitle
+        global _getTitle
 _getTitle:
 
 ; Load address of "titleStr" into the RAX register (RAX holds
 ; the function return result) and return back to the caller:
 
-        lea 	rax, [titleStr]
+        lea rax, [titleStr]
         ret
 
 ; Here is the "asmMain" function.
 
-        global	_asmMain
+        global _asmMain
 _asmMain:
         sub rsp, 56
 
@@ -86,4 +86,3 @@ _asmMain:
 
         add rsp, 56
         ret                            ; Returns to caller
-

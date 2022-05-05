@@ -33,7 +33,6 @@ fmtStr7:
         db 	"After strstr, rax='%s'", nl, 0
 fmtStr8:
         db 	"resultStr length is %d", nl, 0
-
 str1:
         db 	"Hello, ", 0
 str2:
@@ -87,7 +86,7 @@ resultStr:
 
         global	_getTitle
 _getTitle:
-        lea 	rax, [ttlStr]
+        lea rax, [ttlStr]
         ret
 
 ; Here is the "asmMain" function.
@@ -184,4 +183,3 @@ _asmMain:
 
         add rsp, 56
         ret                            ; Returns to caller
-

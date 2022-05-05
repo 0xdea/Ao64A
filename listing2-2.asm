@@ -42,7 +42,7 @@ _getTitle:
 ; Load address of "titleStr" into the RAX register (RAX holds the
 ; function return result) and return back to the caller:
 
-        lea 	rax, [titleStr]
+        lea rax, [titleStr]
         ret
 
 ; Here is the "asmMain" function.
@@ -128,4 +128,3 @@ _asmMain:
         add rsp, 56
 
         ret                            ; Returns to caller
-

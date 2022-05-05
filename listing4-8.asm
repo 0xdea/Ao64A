@@ -20,11 +20,11 @@ fmtStr:
 
 ; Define a struct for a string descriptor:
 
-        struc	strDesc
-        .maxLen 	resd 	1
-        .len 	resd 	1
-        .strPtr 	resq 1
-        endstruc
+struc	        strDesc
+        .maxLen resd 	1
+        .len    resd 	1
+        .strPtr resq    1
+endstruc
 
         section	.data
 
@@ -50,7 +50,7 @@ aString:
 
         global	_getTitle
 _getTitle:
-        lea 	rax, [ttlStr]
+        lea rax, [ttlStr]
         ret
 
 ; Here is the "asmMain" function.
@@ -67,10 +67,9 @@ _asmMain:
 
         lea rdi, [fmtStr]
         mov esi, [aString+strDesc.maxLen] ; Zero extends!
-        mov edx, [aString+strDesc.len] ; Zero extends!
+        mov edx, [aString+strDesc.len]    ; Zero extends!
         mov rcx, [aString+strDesc.strPtr]
         call _printf
 
-        add rsp, 56                    ; Restore RSP
-        ret                            ; Returns to caller
-
+        add rsp, 56                       ; Restore RSP
+        ret                               ; Returns to caller

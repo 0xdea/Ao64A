@@ -26,7 +26,7 @@ asterisk:
 
         global	_getTitle
 _getTitle:
-        lea 	rax, [ttlStr]
+        lea rax, [ttlStr]
         ret
 
 ; print40Spaces-
@@ -35,13 +35,14 @@ _getTitle:
 ; to the console display.
 
 print40Spaces:
-        sub 	rsp, 56                   ; "Magic" instruction
-        mov 	ebx, 40
-        printLoop:	lea 	rdi, [space]
-        call 	_printf
-        dec 	ebx
-        jnz 	printLoop                 ; Until ebx==0
-        add 	rsp, 56                   ; "Magic" instruction
+        sub rsp, 56                   ; "Magic" instruction
+        mov ebx, 40
+printLoop:	
+        lea rdi, [space]
+        call _printf
+        dec ebx
+        jnz printLoop                 ; Until ebx==0
+        add rsp, 56                   ; "Magic" instruction
         ret
 
 ; Here is the "asmMain" function.
@@ -67,4 +68,3 @@ astLp:
         add rsp, 48
         pop rbx
         ret                            ; Returns to caller
-

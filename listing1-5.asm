@@ -49,4 +49,3 @@ _asmFunc:
         add rsp, 56
 
         ret                            ; Returns to caller
-

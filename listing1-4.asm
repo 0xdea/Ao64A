@@ -22,4 +22,3 @@ _main:
         call myProc
 
         ret                            ; Returns to caller
-
