@@ -99,6 +99,7 @@ int main(void)
         char *title = getTitle();
             
         printf( "Calling %s:\n", title );
+        volatile int x=getErrno(); // Must call this to "prime" value
         asmMain();
         printf( "%s terminated\n", title );
     }
