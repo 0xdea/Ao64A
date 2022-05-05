@@ -34,8 +34,26 @@ extern "C"
     // language program can call:
     
     int readLine( char *dest, int maxLen );
+
+    // Special function to retrieve the GCC/stdlib
+    // errno "global" from thread local storage
+    // and return it to an assembly program:
+
+    int getErrno( void );
     
 };
+
+// The C stdlib "errno" variable isn't guaranteed to be
+// a variable at all. Therefore, it is often difficult
+// to access this C stdlib function return value from
+// an assembly language program. The following function
+// fixes that problem by retrieving errno in C and
+// returning its value as a function result
+
+int getErrno( void )
+{
+        return errno;
+}
 
 // readLine reads a line of text from the user (from the 
 // console device) and stores that string into the destination 
