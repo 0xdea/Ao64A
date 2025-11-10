@@ -10,6 +10,4 @@
 >
 > -- Randall Hyde, The Art of 64-bit Assembly Language
 
-NASM macOS translation of the source code listings distributed with the Art of 64-bit Assembly Language book.
-
-See also: <https://artofasm.randallhyde.com/>
+NASM macOS translation of the source code listings distributed with the [Art of 64-bit Assembly Language](https://artofasm.randallhyde.com/) book by Randall Hyde.
